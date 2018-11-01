@@ -1,0 +1,5 @@
+
+[routingTable]
+# Rerouting pour tribufufu.net
+"www.google.com:80"    = "www.google.ch:80"
+"www.google.com:443"   = "www.google.ch:443"
