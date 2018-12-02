@@ -19,18 +19,6 @@ type HostRewriter struct {
 
 var rerouteTable = make(map[string]string)
 
-/*
-var rerouteTable = map[string]string {
-
-	"www.tribufufu.net:80":  "www.google.ch:80",
-	"www.tribufufu.net:443": "www.google.ch:443",
-}
-*/
-/*
-func (hrw *HostRewriter) newHostRewriter() {
-	hrw.RerouteTable = make(map[string]string)
-}
-*/
 // RewriteAddr use reroute table to translate address
 func (hrw *HostRewriter) RewriteAddr(network, addr string) (rNetwork, rAddr string) {
 	//fmt.Printf(">> RewriteAddr (%s %s) >>\n", network, addr)
